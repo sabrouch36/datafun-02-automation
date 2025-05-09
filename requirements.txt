@@ -1,0 +1,13 @@
+pip
+setuptools
+wheel
+loguru
+pyttsx3
+ipython
+jupyter
+ipykernel
+ipywidgets
+numpy
+pandas
+matplotlib
+seaborn
