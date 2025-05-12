@@ -45,6 +45,27 @@ def main():
     print(f" Student score evaluation: {result}")
     count_to(5)
 
-# Step 6: run the script
+# Step 6: define a function using match-case (Python 3.10+)
+def activity_by_day(day: str):
+    match day.lower():
+        case "monday":
+            return " Start of the work week!"
+        case "friday":
+            return " Almost weekend!"
+        case "saturday" | "sunday":
+            return " Weekend vibes!"
+        case _:
+            return " Regular workday"
+# Step 7: define a function using lambda and filter
+def filter_even_numbers(numbers):
+    return list(filter(lambda x: x % 2 == 0, numbers))
+
+# Step 8: run the script
 if __name__ == "__main__":
     main()
+    message = activity_by_day("Friday")
+    print(f" Day message: {message}")
+    evens = filter_even_numbers([1, 2, 3, 4, 5, 6])
+    print(f"🔍 Even numbers: {evens}")
+
+
